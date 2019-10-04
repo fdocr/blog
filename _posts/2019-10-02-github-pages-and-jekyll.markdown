@@ -1,7 +1,8 @@
 ---
 title: "GitHub pages & Jekyll"
 date: 2019-10-02 14:00:00 -0600
-categories: GitHub pages https Jekyll
+tags: ["GitHub", "pages", "https", "Jekyll"]
+permalink: /github-pages-and-jekyll/
 ---
 
 Instead of hosting this site myself any longer I've finally decided to move over to [GitHub pages](https://pages.github.com/). This probably isn't an interesting blog post for anyone other than myself. I just wanted it out there for the record.

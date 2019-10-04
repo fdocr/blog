@@ -1,7 +1,8 @@
 ---
 title: "Learning Rails in 2017"
 date: 2017-06-14 14:00:00 -0600
-categories: ruby rails RoR webapp beginner tutorial help introduction
+tags: ["ruby", "rails", "RoR", "webapp", "beginner", "tutorial", "help", "introduction"]
+permalink: /learning-rails-in-2017/
 ---
 
 So far this year has been surreal & hectic to say the least, and we're basically halfway through. I started a new job late last year, which I expected to be challenging for plenty of reasons. Arguably the most important one: I was going to support a large codebase built in [Ruby](http://ruby-doc.org/) (on [Rails](http://rubyonrails.org/)).

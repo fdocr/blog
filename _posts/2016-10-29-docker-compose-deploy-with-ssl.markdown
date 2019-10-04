@@ -1,7 +1,8 @@
 ---
 title: "Publishing services using docker-compose and NGINX with HTTPS"
 date: 2016-10-29 14:00:00 -0600
-categories: Docker docker-compose TLS SSL HTTPS NGINX EC2 AWS Jenkins reverse proxy
+tags: ["Docker", docker-"compose", "TLS", "SSL", "HTTPS", "NGINX", "EC2", "AWS", "Jenkins", "reverse", "proxy"]
+permalink: /publishing-services-using-docker-compose-and-nginx-with-https/
 ---
 
 This post will break down an example setup to deploy multiple HTTP services secured with TLS using [docker-compose](https://docs.docker.com/compose/overview/) and an NGINX reverse proxy. I already had an SSL certificate for this website and figured my experiments could benefit from HTTPS, so here we are.

@@ -1,7 +1,8 @@
 ---
 title: "Let's get swifty"
 date: 2016-01-24 14:00:00 -0600
-categories: swift bookmark iOS
+tags: ["swift", "bookmark", "iOS"]
+permalink: /lets-get-swifty/
 ---
 
 I'm surprised by the fact I haven't stumbled upon a single article with this title and the proper Rick & Morty pun (*#FreeRick*). Anyways, no backend code tonight, it's been a long couple of weeks at work and university so this will be a short entry with a couple of patterns I've picked up around working with [swift](https://developer.apple.com/swift/). Just some random jiberish that I will most likely find useful in the future.

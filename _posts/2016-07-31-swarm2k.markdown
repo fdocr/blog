@@ -1,7 +1,8 @@
 ---
 title: "Swarm2k"
 date: 2016-07-31 14:00:00 -0600
-categories: docker swarm orchestration linux cluster aws ec2 containers
+tags: ["docker", "swarm", "orchestration", "linux", "cluster", "aws", "ec2", "containers"]
+permalink: /swarm2k/
 ---
 
 Open-source software is a beautiful thing. Whether you're coding, documenting, giving feedback, etc. there is something bigger than you out there. We live in a time where we can ride the ~~whale~~ wave together, regardless of where you happen to live.

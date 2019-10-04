@@ -1,7 +1,8 @@
 ---
 title: "AKS easy as ABC"
 date: 2018-09-14 14:00:00 -0600
-categories: Docker Kubernetes Helm Azure AKS containers
+tags: ["Docker", "Kubernetes", "Helm", "Azure", "AKS", "containers"]
+permalink: /aks-easy-as-abc/
 ---
 
 This is a "walkthrough cheatsheet" from my initial experimenting with AKS (Azure Kubernetes Service). Everything here can be run using Azure's [Free Account trial](https://azure.microsoft.com/en-us/free/).

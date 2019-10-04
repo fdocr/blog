@@ -1,7 +1,8 @@
 ---
 title: "Kubernetes integration with Rake tasks"
 date: 2019-06-03 14:00:00 -0600
-categories: Activek8s Docker Kubernetes cluster kubectl Ruby Rails Rake Tasks microservices
+tags: ["Activek8s", "Docker", "Kubernetes", "cluster", "kubectl", "Ruby", "Rails", "Rake", "Tasks", "microservices"]
+permalink: /kubernetes-integration-with-rake-tasks/
 ---
 
 [Activek8s](https://github.com/fdoxyz/activek8s) is a gem that relies on certain conventions to provide a thorough [Kubernetes](https://kubernetes.io/) integration on a set of Rake tasks. The gem is a byproduct of a project that makes use of Kubernetes to orchestrate our services and other tools (Redis, CI/CD, logging, etc). This is not the absolute truth, it's only a solution that worked for our team and we [open sourced on GitHub](https://github.com/fdoxyz/activek8s).

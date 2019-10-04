@@ -1,7 +1,8 @@
 ---
 title: "Lightning talk"
 date: 2016-06-02 14:00:00 -0600
-categories: Docker meetup lightning talk tests Jenkins dokku continuous integration CI
+tags: ["Docker", "meetup", "lightning", "talk", "tests", "Jenkins", "dokku", "continuous", "integration", "CI"]
+permalink: /lightning-talk/
 ---
 
 Something big went down last Tuesday, at least for me. Not only [@mattfgl](https://twitter.com/mattfgl) gave an amazing talk on [kubernetes](https://kubernetes.io/) but I got to step in front of a room packed with fellow Docker enthusiasts to give my first lightning talk ever, on my [Dockerized tests in a dockerized Jenkins](/post/running-dockerized-tests-in-jenkins) blog post. Here are the **updated** slides

@@ -1,7 +1,8 @@
 ---
 title: "Tying Let's Encrypt and Docker Swarm together"
 date: 2018-08-09 14:00:00 -0600
-categories: NGINX blog Let's Encrypt HTTPS SSL TLS Certbot Docker Swarm cluster container orchestration Microservices Kubernetes alternative DigitalOcean Digital Ocean
+tags: ["NGINX", "blog", "Let's Encrypt", "HTTPS", "SSL", "TLS", "Certbot", "Docker", "Swarm", "cluster", "container", "orchestration", "Microservices", "Kubernetes", "alternative", "DigitalOcean"]
+permalink: /tying-lets-encrypt-and-docker-swarm-together/
 ---
 
 It's no secret that [Kubernetes](https://kubernetes.io/) has seen a booming interest in the past year or two. It's also known that its learning curve is steep and its complexity remains relatively high. Because of this I've been interested in striking a simpler alternative in [Docker Swarm](https://docs.docker.com/engine/swarm/) for a while now. The following is my **experiment** for setting up a Swarm cluster that is able to publish different services using [Let's Encrypt](https://letsencrypt.org/) SSL certificates **with ease**.
@@ -165,7 +166,7 @@ placement:
 
 The cluster topology would look like the following diagram, with each service in containers distributed throughout worker nodes:
 
-![Manager Reverse Proxy Layout](assets/manager-swarm-layout.png "Manager Reverse Proxy Layout")
+![Manager Reverse Proxy Layout](/assets/manager-swarm-layout.png "Manager Reverse Proxy Layout")
 
 It's not difficult to see the bottleneck or single point of failure here. As stated before, if for whatever reason the manager node fails your entire cluster is out of reach. Under heavy load a single machine would have trouble keeping up, more even being such a crucial part of your infrastructure.
 
