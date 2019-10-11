@@ -30,6 +30,11 @@ url: "https://visualcosita.com" # the base hostname & protocol for your site, e.
 twitter_username: fdoxyz
 github_username:  fdoxyz
 
+site:
+  google_analytics: UA-69537324-1
+  disqus:
+    shortname: visualcosita
+
 # Build settings
 theme: minima
 plugins:
