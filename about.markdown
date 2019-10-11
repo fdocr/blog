@@ -4,9 +4,13 @@ title: About
 permalink: /about/
 ---
 
-I'm a contractor software developer based in Costa Rica currently working as solutions architect & full stack developer @ [Gurunet](http://gurunet.biz/).
+It's difficult to explain what this website is about sometimes. The best description I've come up with lives down in the footer. So for the [About](/about) page I'll be talking about myself instead.
 
-I've been recently focused on backend & full-stack web development but have also led native iOS projects before. Throughout my career I've had experience working with the following technologies:
+I'm an independent contractor based in Costa Rica currently working as a solutions architect & full stack developer.
+
+As for experience I've been recently focused on backend & full-stack web development. I've also led the development of iOS native projects, starting from (re) design stage all the way to release and support post launch. I lived to tell the story after upgrading a few of the early Swift major versions.
+
+Throughout my career I've had experience working with the following technologies:
 
  * Ruby on Rails
     * Currently very interested in StimulusJS for minimal frontend Javascript
