@@ -11,7 +11,7 @@ I was heavily inspired by the successful [Backup](https://github.com/backup/back
 
 ## Installation & the configuration file
 
-You'll need [Ruby installed](https://www.ruby-lang.org/en/documentation/installation) in your machine to get started. I'd highly recommend using a [version manager](https://www.ruby-lang.org/en/documentation/installation/#managers)
+You'll need [Ruby installed](https://www.ruby-lang.org/en/documentation/installation) on your machine to get started. I'd highly recommend using a [version manager](https://www.ruby-lang.org/en/documentation/installation/#managers)
 
     $ gem install martilla
     $ martilla setup backup-config.yml
@@ -85,13 +85,13 @@ Now if a problem happens and your backup fails you'll have visibility of it righ
 
 ## Hacktoberfest
 
-Thanks to Hacktoberfest we got [our first contribution](https://github.com/fdoxyz/martilla/pull/2) and that's how we have Slack notification support!
+Thanks to [Hacktoberfest](https://hacktoberfest.digitalocean.com/) we got [our first contribution](https://github.com/fdoxyz/martilla/pull/2) and that's how we have Slack notification support!
 
 If you're looking for a Ruby project to contribute during this last stretch of "hacktober" take a look at [our open issues](https://github.com/fdoxyz/martilla/issues). I'll be happy to guide you through questions you might have.
 
 ## Conclusions
 
-Martilla is meant to be a "simple backup tool for simple everyday use". High throughput and larger databases (more than 50GB in size) will probably benefit more from backup solutions provided by most managed database services in the likes of [AWS RDS](https://aws.amazon.com/rds/).
+Martilla is meant to be a "simple backup tool for simple everyday use". High throughput and larger databases (probably > 50GB in size) will likely benefit more from backup solutions provided by most managed database services in the likes of [AWS RDS](https://aws.amazon.com/rds/).
 
 For smaller deployments and side projects this might be an interesting addition to your toolbelt. For future releases I'm thinking of features like more integrations (databases, storages and notifiers), a command to automatically restore a backup and more customizable options.
 
