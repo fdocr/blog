@@ -5,7 +5,7 @@ tags: ["Capybara", "Selenium", "Ruby on Rails", "RoR", "Chrome", "Headless Chrom
 permalink: /headless-chrome-dual-mode-tests-for-ruby-on-rails/
 ---
 
-Headless tests are necessary for CI and very useful for unobtrusive local development. No need to ditch the driver that directly controls the browser though, there's lots of debugging value in being able to switch between both modes.
+Headless tests are necessary for CI environments and very useful for unobtrusive local development. No need to ditch the driver that directly controls the browser though, there's lots of debugging value in being able to switch between both modes.
 
 You'll first need both drivers installed and configured, which will give you headless tests by default. Running your tests with a `HEADLESS=0` environment variable will give you visual feedback from the test suite as it executes.
 
@@ -48,21 +48,22 @@ Now the key config for this to work will live in `spec/support/capybara.rb` and 
 ```ruby
 # spec/support/capybara.rb
 RSpec.configure do |config|
+  config.include FactoryBot::Syntax::Methods
   config.include Capybara::DSL
 
   Capybara.server = :puma, { Silent: true }
 
-  # Capybara non-headless :chrome driver
+  # Chrome non-headless driver
   Capybara.register_driver :chrome do |app|
     Capybara::Selenium::Driver.new(app, browser: :chrome)
   end
 
-  # Capybara :headless_chrome driver with desired capabilities
+  # Chrome headless driver
   Capybara.register_driver :headless_chrome do |app|
     caps = Selenium::WebDriver::Remote::Capabilities.chrome(loggingPrefs: { browser: 'ALL' })
     opts = Selenium::WebDriver::Chrome::Options.new
 
-    chrome_args = %w[--headless --window-size=1920,1080 --disable-gpu --remote-debugging-port=9222]
+    chrome_args = %w[--headless --no-sandbox --disable-gpu --window-size=1920,1080 --remote-debugging-port=9222]
     chrome_args.each { |arg| opts.add_argument(arg) }
     Capybara::Selenium::Driver.new(app, browser: :chrome, options: opts, desired_capabilities: caps)
   end
@@ -87,12 +88,12 @@ The default behavior is Headless. The usual clean, quick, and simple.
 $ bundle exec rspec
 ```
 
-Add the environment variable and a Chrome window will be summoned and remotely controlled.
+Add the environment variable and a Chrome window will be summoned and controlled remotely.
 
 ```sh
 $ HEADLESS=0 bundle exec rspec
 ```
 
-Like I said, debugging is the main motivation for this configuration. Breakpoints on forms that aren't passing in your test suite can let you inspect on a Chrome window directly.
+Like I said, debugging is the main motivation for this configuration. Breakpoints when tests aren't passing because an element is not visible is one the best examples I can think of. Being able to inspect on a Chrome window directly has saved me lots of time.
 
 Hope it helps anyone, Pura Vida!
