@@ -11,7 +11,7 @@ This will be a walkthrough on how to backup a PostgreSQL DB to AWS S3 and easily
 
 ## Objective
 
-Daily backups with a retention period of one week. This can easily be adapted to 3 backups per day + 1 month retention, or other any other combination desired.
+Daily backups with a retention period of one week. This can be easily adapted to 3 backups per day + 1 month retention, or other any other combination desired.
 
 For the sake of the walkthrough we'll stick to the simple daily backups with 7 day retention example.
 
@@ -19,13 +19,17 @@ For the sake of the walkthrough we'll stick to the simple daily backups with 7 d
 
 A working Ruby installation, a PostgreSQL database to backup and the [Martilla](https://github.com/fdoxyz/martilla) CLI tool
 
-    $ gem install martilla
+```sh
+$ gem install martilla
+```
 
 ## The config file
 
 Create a sample config file
 
-    $ martilla setup backup-config.yml
+```sh
+$ martilla setup backup-config.yml
+```
 
 The sample config file will look similar to the following
 
@@ -119,7 +123,7 @@ For more details on all the available options check [the docs](https://github.co
 $ martilla backup backup-config.yml
 ```
 
-You should be able to see the backup appear in your S3 bucket within the backups directory. Martilla adds a timestamp by default to differ from each run.
+You should be able to see the backup appear in your S3 bucket within the backups directory. Martilla adds a timestamp by default to differentiate from each run.
 
 Try executing this command multiple times, and you should eventually see that no more than 7 backups stored... That's the retention limit working!
 
@@ -140,6 +144,28 @@ and add this line to it
 ```
 
 [We did it!](https://youtu.be/SBCw4_XgouA?t=5) We now have daily backups of a PostgreSQL database that will be retained for 7 days.
+
+Your config file should now look like this:
+
+```yaml
+---
+db:
+  type: postgres
+  options:
+    db: my_db
+storage:
+  type: s3
+  options:
+    bucket: my_side_project
+    filename: backups/backup.sql
+    region: 'us-west-2'
+    retention: 7
+notifiers:
+- type: 'slack'
+  options:
+    slack_channel: '#backups'
+    slack_webhook_url: https://hooks.slack.com/services/TTSAMPLEPO/BWEBHOOKOQ/NDQLOLAMSKDMLOLASROFLMDLA
+```
 
 ## Conclusions
 
