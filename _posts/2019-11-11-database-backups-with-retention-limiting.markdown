@@ -2,7 +2,7 @@
 title: "PostgreSQL backups to S3 with retention limits"
 date: 2019-11-11 00:30:00 -0600
 tags: ["Martilla", "CLI", "Ruby", "Backups", "PostgreSQL", "MySQL", "AWS", "S3", "Database"]
-permalink: /headless-chrome-dual-mode-tests-for-ruby-on-rails/
+permalink: /database-backups-with-retention-limiting/
 ---
 
 This is a bit of an update on the latest version of [Martilla](https://github.com/fdoxyz/martilla). The feature introduced that I'm more excited about is the ability to limit the retention of your backups.
