@@ -9,3 +9,19 @@ a {
 img {
   margin: 30px auto 30px auto;
 }
+
+.splash-display {
+  color: $red !important;
+  margin: 35% 0 45% 0;
+  font-size: 2em;
+  line-height: 1;
+  letter-spacing: 3px;
+  font-family: 'Luckiest Guy', Arial;
+}
+
+@media (min-width: 550px) {
+  .splash-display {
+    font-size: 4em;
+    margin: 10% 0;
+  }
+}

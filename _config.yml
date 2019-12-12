@@ -21,11 +21,11 @@
 title: Visualcosita
 author: Fernando Valverde
 email: fernando@visualcosita.com
+list_title: ''
 description: >- # this means to ignore newlines until "baseurl:"
-  This is my own captain's log, the place where I document the experiences I've
-  had while tinkering with different concepts & technologies. Expect odd
-  experiments, personal opinions, and jokes/puns behind some links throughout
-  the website.
+  This blog is my own captain's log, the place where I document the experiences 
+  I've had while tinkering with different concepts & technologies. Expect odd
+  experiments and personal opinions.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://visualcosita.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: fdoxyz
