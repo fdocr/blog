@@ -21,6 +21,8 @@ I learned about some of the building blocks of static sites built with Jekyll (b
 - **Layouts** represent the structure of your pages (or posts) and each page (or post) defines the layout to be used in [Front Matter](https://jekyllrb.com/docs/front-matter/). This allows you to have your posts with the same structure by using the `layout: post`, also static pages like `about.md` and others can use the `layout: page`, etc.
 - **Includes** are just like reusable partials. For example a footer that's reused on every page, usually referenced from a **layout**.
 
+The repo's [README](https://github.com/jekyll/minima/blob/v2.5.0/README.md) has a thorough walkthrough on [customization](https://github.com/jekyll/minima/blob/v2.5.0/README.md#customization).
+
 ## Where's everything? Probably GitHub
 
 In short, *if it's not in your project's directory go check the theme and see if it's defined over there*. Some examples of this idea in practice:
